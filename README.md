@@ -1,11 +1,11 @@
 # Guia de programação para o pacote do R `capm`
-#### Oswaldo Santos Baquero (Editor)
+#### Oswaldo Santos Baquero (coordenador)
 #### Markos Amaku
 #### Fernando Ferreira
 <br>
 Contato: <oswaldosant@gmail.com>
 <br>
-Última revisão: 29 de outubro de 2015  
+Última revisão: 30 de outubro de 2015  
 Em caso de não estar lendo a versão online, está versão pode estar desatualizada.  
 Clique [aqui](https://www.gitbook.com/book/oswaldosantos/guia-de-programacao-para-o-pacote-do-r-capm/details) para acessar a página do livro.
 <br><br><br><br>

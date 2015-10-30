@@ -1,6 +1,7 @@
 # Sumário
 
 * [Folha de rosto](title-page.md)
+* [Autores](authors.md)
 * [Introdução](README.md)
 * [Selecionando unidades amostrais](selecting.md)
 * [Mapeando unidades amostrais](mapping.md)
