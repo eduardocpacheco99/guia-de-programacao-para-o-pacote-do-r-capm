@@ -34,7 +34,7 @@ MapkmlPSU(shape = 'santos',
 
 Se aparece o erro "503 Service Unavailable", devemos tentar mais tarde para ver se o servidor OSM volta a funcionar (ver a página de ajuda de `get_openstreetmap`).
 
-```{r map_all_psu}
+```{r map_all_psu, message=FALSE}
 # o pacote rgeos deve estar instalado.
 library(rgdal); library(ggmap); library(ggsn)
 santos <- readOGR(dsn = '.', layer = 'santos')
