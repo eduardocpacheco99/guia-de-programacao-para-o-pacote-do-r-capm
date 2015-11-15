@@ -1,6 +1,7 @@
 # Sumário
 
 * [Folha de rosto](title-page.md)
+* [Ficha catalográfica](catalographic-card.md)
 * [Autores](authors.md)
 * [Introdução](README.md)
 * [Selecionando unidades amostrais](selecting.md)
