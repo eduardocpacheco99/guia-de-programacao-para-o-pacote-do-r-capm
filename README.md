@@ -5,7 +5,7 @@
 <br>
 Contato: <oswaldosant@gmail.com>
 <br>
-Última revisão: 10 de março de 2016  
+Última revisão: 16 de abril de 2016  
 Em caso de não estar lendo a versão online, está versão pode estar desatualizada.  
 Clique [aqui](https://www.gitbook.com/book/oswaldosantos/guia-de-programacao-para-o-pacote-do-r-capm/details) para acessar a página do livro.
 <br><br><br><br>
