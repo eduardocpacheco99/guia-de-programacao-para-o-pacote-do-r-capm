@@ -26,6 +26,6 @@ O propósito deste guia é mostrar como implementar o [fluxo de trabalho](http:/
  * santos.shx
  * survey.data.csv
 
-Esses arquivos podem ser baixados [aqui](https://github.com/oswaldosantos/guia-de-programacao-para-o-pacote-do-r-capm) usando o botão "clone or download" e o link "Download ZIP". Após descompactado o drietório, os arquivos poderão ser encontrados no subdiretório "rmds".  
+Esses arquivos podem ser baixados [aqui](https://github.com/oswaldosantos/guia-de-programacao-para-o-pacote-do-r-capm) usando o botão "Clone or download" e o link "Download ZIP". Após descompactado o drietório, os arquivos poderão ser encontrados no subdiretório "rmds".  
 
 Não usaremos todas as funções do `capm` e das funções usadas só exploraremos alguns argumentos. Por favor consulte as páginas de ajuda das funções para ver os detalhes.
