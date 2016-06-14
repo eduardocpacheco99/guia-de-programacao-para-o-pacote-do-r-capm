@@ -7,6 +7,15 @@
 Continuando com o desenho por conglomerados em dois estágios, há duas fontes de dados que precisamos para calcular o tamanho e a composição amostral. A primeira é o objeto `psu.ssu` que criamos na primeira seção. A segunda fonte contém dados que coletamos hipoteticamente na amostra piloto que desenhamos anteriormente. O arquivo `pilot.csv` contém tantas linhas como domicílios visitados no piloto. A primeira coluna contém os identificadores das UPA à que pertence o respectivo domicílio. A segunda coluna contém o número de cães observados em cada domicílio. Com essas duas fontes de dados, podemos definir o nível de confiança que queremos, o erro que estamos dispostos a aceitar e uma estimativa do custo. A última é a razão entre o custo associado à visita de uma UPA e o custo associado à realização de uma entrevista.  
 
 
+```r
+> pilot <- read.csv('pilot.csv')
+> Calculate2StageSampleSize(psu.ssu = psu.ssu, 
++                           psu.x = pilot,
++                           conf.level = 0.95,
++                           error = 0.1,
++                           cost = 10)
+```
+
 ```
                                                Value
 Sample size                             3.000000e+02
