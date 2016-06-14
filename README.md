@@ -5,7 +5,7 @@
 <br>
 Contato: <oswaldosant@gmail.com>
 <br>
-Última revisão: 16 de abril de 2016  
+Última revisão: 14 de junho de 2016  
 Em caso de não estar lendo a versão online, está versão pode estar desatualizada.  
 Clique [aqui](https://www.gitbook.com/book/oswaldosantos/guia-de-programacao-para-o-pacote-do-r-capm/details) para acessar a página do livro.
 <br><br><br><br>
@@ -26,6 +26,6 @@ O propósito deste guia é mostrar como implementar o [fluxo de trabalho](http:/
  * santos.shx
  * survey.data.csv
 
-Esses arquivos podem ser baixados [aqui](https://github.com/oswaldosantos/programming-guide-for-the-capm-r-package) usando o botão "Download ZIP" no canto inferior direito.  
+Esses arquivos podem ser baixados [aqui](https://github.com/oswaldosantos/guia-de-programacao-para-o-pacote-do-r-capm) usando o botão "clone or download" e o link "Download ZIP". Após descompactado o drietório, os arquivos poderão ser encontrados no subdiretório "rmds".  
 
 Não usaremos todas as funções do `capm` e das funções usadas só exploraremos alguns argumentos. Por favor consulte as páginas de ajuda das funções para ver os detalhes.
