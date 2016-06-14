@@ -36,7 +36,7 @@ Se aparece o erro "503 Service Unavailable", devemos tentar mais tarde para ver 
 
 ```{r map_all_psu, message=FALSE}
 # o pacote rgeos deve estar instalado.
-library(rgdal); library(ggmap); library(ggsn)
+library(rgdal); library(broom); library(ggmap); library(ggsn)
 santos <- readOGR(dsn = '.', layer = 'santos')
 santos.pilot <- santos[
     as.character(santos@data[ , 1]) %in%
@@ -46,11 +46,10 @@ santos.pilot <- spTransform(
     CRS('+init=epsg:4326'))
 santos.pilot@data$id <-
     rownames(santos.pilot@data)
-santos.pilot.points <- fortify(santos.pilot,
-                               region = "id")
+santos.pilot.points <- tidy(santos.pilot)
 santos.pilot.df <- merge(santos.pilot.points,
                          santos.pilot@data,
-                         by = "id")
+                         by = 'id')
 
 osm.all.psu <- get_openstreetmap(
     bbox = c(-46.386, -23.991, -46.298, -23.929),

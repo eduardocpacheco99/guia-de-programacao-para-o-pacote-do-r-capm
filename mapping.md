@@ -22,7 +22,7 @@ Se aparece o erro "503 Service Unavailable", devemos tentar mais tarde para ver 
 
 ```r
 > # o pacote rgeos deve estar instalado.
-> library(rgdal); library(ggmap); library(ggsn)
+> library(rgdal); library(broom); library(ggmap); library(ggsn)
 > santos <- readOGR(dsn = '.', layer = 'santos')
 ```
 
@@ -42,11 +42,10 @@ It has 1 fields
 +     CRS('+init=epsg:4326'))
 > santos.pilot@data$id <-
 +     rownames(santos.pilot@data)
-> santos.pilot.points <- fortify(santos.pilot,
-+                                region = "id")
+> santos.pilot.points <- tidy(santos.pilot)
 > santos.pilot.df <- merge(santos.pilot.points,
 +                          santos.pilot@data,
-+                          by = "id")
++                          by = 'id')
 > 
 > osm.all.psu <- get_openstreetmap(
 +     bbox = c(-46.386, -23.991, -46.298, -23.929),
@@ -66,7 +65,7 @@ It has 1 fields
 +     north(santos.pilot.df, symbol = 15)
 ```
 
-![plot of chunk map_all_psu](figures/map_all_psu-1.png) 
+![plot of chunk map_all_psu](figures/map_all_psu-1.png)
 
 Sem importar o método usado para produzir os mapas, devemos desenhar um percurso no mapa de cada UPA para poder ir por todas as ruas. Podemos definir um domicílio em um ponto arbitrário (localização inferior esquerda) como o primeiro domicílio e a partir do mesmo, podemos seguir o percurso contando os domicílios (incluindo os dois lados dos fragmentos de rua totalmente contidos na UPA).  
 
@@ -89,4 +88,4 @@ O seguinte mapa mostra a quarta UPA selecionada.
 Regions defined for each Polygons
 ```
 
-![plot of chunk map_4th_psu](figures/map_4th_psu-1.png) 
+![plot of chunk map_4th_psu](figures/map_4th_psu-1.png)
